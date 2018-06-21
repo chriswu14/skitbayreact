@@ -1,0 +1,22 @@
+{
+  "name": "dogood",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "yarn": "1.7.0",
+    "node": "10.4.1"
+  },
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html/"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "parcel-bundler": "^1.9.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.9.2"
+  }
+}
