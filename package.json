@@ -7,18 +7,21 @@
     "node": "10.4.1"
   },
   "scripts": {
-    "start": "parcel ./src/index.html --no-cache",
+    "start": "parcel ./src/index.html --no-hmr --no-cache",
     "build": "parcel build ./src/index.html --no-cache"
   },
   "license": "MIT",
   "dependencies": {
+    "@material-ui/core": "^1.2.3",
+    "antd": "^3.6.4",
     "features": "^0.1.0",
     "parcel-bundler": "^1.9.2",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^3.3.3"
   },
   "devDependencies": {
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
