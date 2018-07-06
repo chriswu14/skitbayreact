@@ -8,9 +8,9 @@ const BulmaHero = ({className, children}) => (
   </section>
 );
 const GradientSection = styled(BulmaHero)`
-  background: #7b4397;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #7b4397, #dc2430);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #7b4397, #dc2430); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #d91839;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(301deg, #d91839, #4f136d);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(301deg, #d91839, #4f136d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   * {
     color: white;
   }
