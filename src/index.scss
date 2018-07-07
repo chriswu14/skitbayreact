@@ -1,6 +1,18 @@
-$family-sans-serif: Gilroy, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
+$family-sans-serif: Gilroy, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 @import '../node_modules/bulma/bulma';
+
+// fix bulma issues
+@media screen and (min-width: 1088px) {
+  .navbar > .container .navbar-brand,
+  .container > .navbar .navbar-brand {
+    margin-left: -.75rem;
+  }
+  .navbar > .container .navbar-menu,
+  .container > .navbar .navbar-menu {
+    margin-right: -.75rem;
+  }
+}
 
 @font-face {
   font-family: "Gilroy";
