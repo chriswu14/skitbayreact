@@ -4,26 +4,11 @@ import styled from 'styled-components';
 import LogoText from '../LogoText'
 import BodyHeartImg from '../../images/heart-img.svg'
 
-const BulmaHero = ({className, children}) => (
-  <section className={className}>
-    {children}
-  </section>
-);
-const GradientSection = styled(BulmaHero)`
-  background: #d91839;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(301deg, #d91839, #4f136d);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(301deg, #d91839, #4f136d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  * {
-    color: white;
-  }
-`;
-
 export default class Landing extends Component {
   render() {
     return (
-      <GradientSection className="hero is-large">
-        <div className="hero-body">
+      <GradientSection className={`hero is-large ${this.props.className}`}>
+        <HeartBackgroundDiv className={`hero-body ${this.props.className}`}>
           <div className="container">
             <div className=" columns is-gapless">
                 <div className="column">
@@ -38,12 +23,31 @@ export default class Landing extends Component {
                   </p>
                 </div>
                 <div className="column" >
-                    <img src={BodyHeartImg} style={{marginTop: '-135px'}}/>
+
                 </div>
               </div>
           </div>
-        </div>
+        </HeartBackgroundDiv>
       </GradientSection>
     );
   }
 }
+
+const GradientSection = styled.section`
+  background: #d91839;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(301deg, #d91839, #4f136d);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(301deg, #d91839, #4f136d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  * {
+    color: white;
+  }
+`;
+
+const HeartBackgroundDiv = styled.div`
+  @media(min-width: 769px) {
+    background: url(${BodyHeartImg});
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 50%;
+  }
+`;
