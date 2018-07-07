@@ -34,7 +34,7 @@ export default class Landing extends Component {
 }
 
 const Hero = styled.section.attrs({
-  className: 'hero is-large'
+  className: 'hero'
 })`
   background: #d91839;  /* fallback for old browsers */
   background: -webkit-linear-gradient(301deg, #d91839, #4f136d);  /* Chrome 10-25, Safari 5.1-6 */
@@ -43,11 +43,21 @@ const Hero = styled.section.attrs({
   * {
     color: white;
   }
+
+  @media(min-width: 769px) {
+    .hero-body {
+      padding-top: 14rem;
+      padding-bottom: 14rem;
+    }
+  }
 `;
 
 const HeroBody = styled.div.attrs({
   className: 'hero-body'
 })`
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+
   @media(min-width: 769px) {
     background: url(${BodyHeartImg});
     background-repeat: no-repeat;
