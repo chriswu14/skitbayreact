@@ -4,7 +4,6 @@ import styled from 'styled-components';
 
 const LogoTextSpan = styled.span`
   &&& {
-    color: white;
     font-size: ${props => props.fontSize};
     font-weight: 200;
     strong {

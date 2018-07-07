@@ -3,19 +3,6 @@ import styled from 'styled-components';
 
 import LogoText from '../LogoText'
 
-const BulmaNavbar = ({className, children}) => (
-  <nav className={className}>
-    {children}
-  </nav>
-);
-const TransparentNav = styled(BulmaNavbar)`
-  background-color: transparent;
-  background-image: none;
-  * {
-    color: white;
-  }
-`;
-
 export default class TopNav extends Component {
   constructor(props){
       super(props);
@@ -30,7 +17,7 @@ export default class TopNav extends Component {
   render() {
     let toggleClass = this.state.showBurgerMenu ? "is-active" : "";
     return (
-      <TransparentNav className="navbar is-fixed-top">
+      <nav className="navbar is-fixed-top">
         <div className="container">
           <div className="navbar-brand">
             <a className="navbar-item" href="https://bulma.io">
@@ -65,7 +52,7 @@ export default class TopNav extends Component {
             </div>
           </div>
         </div>
-      </TransparentNav>
+      </nav>
     );
   }
 }
