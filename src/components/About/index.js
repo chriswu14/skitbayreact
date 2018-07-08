@@ -2,27 +2,22 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 import RectangleGradient from "../RectangleGradient";
+import BodyHeartImg from "../../images/heart-img.svg";
+import SectionHeading from "../SectionHeading";
 
 export default class About extends Component {
     render() {
         return (
-            <ContainerSection className="hero is-large">
-                <div className="bg">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 100 100"
-                        preserveAspectRatio="none"
-                    >
-                        <polygon fill="#deecff" points="0,100 100,0 100,100" />
-                    </svg>
-                </div>
+            <ContainerSection>
+                <Background />
+                <ForeGround />
                 <div className="level">
-                    <AboutHeading>about</AboutHeading>
+                    <SectionHeading>about</SectionHeading>
                 </div>
 
-                <div className="hero-body">
+                <ContainerBody>
                     <div className="container">
-                        <div className=" columns is-gapless">
+                        <div className="columns is-gapless is-desktop">
                             <div className="column">
                                 <DescriptionText>
                                     doGood is a Charity Social Network built on
@@ -31,43 +26,54 @@ export default class About extends Component {
                                     charitable actions.
                                 </DescriptionText>
                                 <RectangleGradient />
-                                <DescriptionSubText>
-                                    <p>
-                                        It rewards users with digital Karma
-                                        which are tradable tokens. doGood
-                                        rewards its community of passionate and
-                                        committed volunteers who make a
-                                        difference in their communities. By
-                                        rewarding volunteers and charity, doGood
-                                        recognize their commitment and effort to
-                                        aid a cause.
-                                    </p>
-                                    <p>
-                                        Using blockchain technology could also
-                                        change the way people contribute to
-                                        charities. Since blockchain technology
-                                        eliminates the need for third parties
-                                        and makes transactions fully
-                                        transparent, it could deliver
-                                        significant benefits in improving trust.
-                                    </p>
-                                    <p>
-                                        Being a Social Network, doGood is
-                                        designed to be a place where people can
-                                        share, discuss about charities and
-                                        social issues they care about, connect
-                                        with like-minded people and non-profits,
-                                        and take actions by voting, commenting,
-                                        creating events, signing petitions,
-                                        raising money or making donations in a
-                                        fully transparent platform.
-                                    </p>
-                                </DescriptionSubText>
+                                <div className="columns is-desktop">
+                                    <div className="column is-10">
+                                        <DescriptionSubText>
+                                            <p>
+                                                It rewards users with digital
+                                                Karma which are tradable tokens.
+                                                doGood rewards its community of
+                                                passionate and committed
+                                                volunteers who make a difference
+                                                in their communities. By
+                                                rewarding volunteers and
+                                                charity, doGood recognize their
+                                                commitment and effort to aid a
+                                                cause.
+                                            </p>
+                                            <p>
+                                                Using blockchain technology
+                                                could also change the way people
+                                                contribute to charities. Since
+                                                blockchain technology eliminates
+                                                the need for third parties and
+                                                makes transactions fully
+                                                transparent, it could deliver
+                                                significant benefits in
+                                                improving trust.
+                                            </p>
+                                            <p>
+                                                Being a Social Network, doGood
+                                                is designed to be a place where
+                                                people can share, discuss about
+                                                charities and social issues they
+                                                care about, connect with
+                                                like-minded people and
+                                                non-profits, and take actions by
+                                                voting, commenting, creating
+                                                events, signing petitions,
+                                                raising money or making
+                                                donations in a fully transparent
+                                                platform.
+                                            </p>
+                                        </DescriptionSubText>
+                                    </div>
+                                </div>
                             </div>
                             <div className="column" />
                         </div>
                     </div>
-                </div>
+                </ContainerBody>
             </ContainerSection>
         );
     }
@@ -76,42 +82,41 @@ export default class About extends Component {
 const BulmaHero = ({ className, children }) => (
     <section className={className}>{children}</section>
 );
-const ContainerSection = styled(BulmaHero)`
-    background: #ffffff;
 
-    * {
-        color: #544c63;
-    }
-
-    .bg {
-        width: 100%;
-        opacity: 0.29;
-        margin-top: 158px;
-        position: absolute;
-        background-color: #deecff;
-        transform: skewY(16.5deg);
-        transform-origin: top left;
-    }
-
-    .bg svg {
-        width: 100%;
-        height: 1000px;
+const ContainerBody = styled.div.attrs({ className: "hero-body" })`
+    padding-top: 0px;
+    @media (min-width: 769px) {
+        padding-top: 88px;
     }
 `;
 
-const AboutHeading = styled.h2.attrs({
-    className: "title is-2"
+const ContainerSection = styled.section.attrs({
+    className: "hero"
 })`
-    &&& {
-        font-family: Gilroy;
-        font-size: 282px;
-        font-weight: 900;
-        font-style: normal;
-        line-height: 1;
-        letter-spacing: 10.6px;
-        color: #f1f1f1;
-        z-index: 2;
-        margin-left: 70px;
+    background: #ffffff;
+`;
+
+const Background = styled.div.attrs({})`
+    width: 100%;
+    height: 700px
+    opacity: 0.29;
+    margin-top: 158px;
+    position: absolute;
+    background-color: #deecff;
+    transform: skewY(16.5deg);
+    transform-origin: top left;
+`;
+
+const ForeGround = styled.div.attrs({})`
+    @media (min-width: 769px) {
+        width: 100%;
+        height: 962px;
+        margin-top: 158px;
+        position: absolute;
+        background: url(${BodyHeartImg});
+        background-repeat: no-repeat;
+        background-position: 100% 50%;
+        background-size: 50%;
     }
 `;
 
@@ -124,7 +129,7 @@ const DescriptionText = styled.div.attrs({
         font-weight: 900;
         font-style: normal;
         font-stretch: normal;
-        line-height: 1.67;
+        line-height: 40px;
         letter-spacing: 0.3px;
         color: #544c63;
     }
@@ -136,7 +141,7 @@ const DescriptionSubText = styled.div.attrs({})`
         font-weight: 300;
         font-style: normal;
         font-stretch: normal;
-        line-height: 1.67;
+        line-height: 40px;
         letter-spacing: 0.3px;
         color: #544c63;
     }
