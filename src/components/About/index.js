@@ -10,7 +10,7 @@ export default class About extends Component {
         return (
             <ContainerSection>
                 <Background />
-                <ForeGround />
+                <Foreground />
                 <div className="level">
                     <SectionHeading>about</SectionHeading>
                 </div>
@@ -107,8 +107,8 @@ const Background = styled.div.attrs({})`
     transform-origin: top left;
 `;
 
-const ForeGround = styled.div.attrs({})`
-    @media (min-width: 769px) {
+const Foreground = styled.div.attrs({})`
+    @media (min-width: 1088px) {
         width: 100%;
         height: 962px;
         margin-top: 158px;
@@ -137,6 +137,7 @@ const DescriptionText = styled.div.attrs({
 
 const DescriptionSubText = styled.div.attrs({})`
     &&& {
+        font-family: SFProText-Light, Gilroy;
         font-size: 18px;
         font-weight: 300;
         font-style: normal;
