@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 import RectangleGradient from "../RectangleGradient";
-import BodyHeartImg from "../../images/heart-img.svg";
+import PhoneMockImg from "../../images/phone-mock.png";
 import SectionHeading from "../SectionHeading";
 
 export default class About extends Component {
@@ -98,7 +98,7 @@ const ContainerSection = styled.section.attrs({
 
 const Background = styled.div.attrs({})`
     width: 100%;
-    height: 700px
+    height: 700px;
     opacity: 0.29;
     margin-top: 158px;
     position: absolute;
@@ -110,13 +110,13 @@ const Background = styled.div.attrs({})`
 const Foreground = styled.div.attrs({})`
     @media (min-width: 1088px) {
         width: 100%;
-        height: 962px;
-        margin-top: 158px;
+        height: 84rem;
+        margin-top: 10rem;
         position: absolute;
-        background: url(${BodyHeartImg});
+        background: url(${PhoneMockImg});
         background-repeat: no-repeat;
-        background-position: 100% 50%;
-        background-size: 50%;
+        background-position: 105% 50%;
+        background-size: 55%;
     }
 `;
 
