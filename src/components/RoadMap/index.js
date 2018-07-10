@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 import RectangleGradient from "../RectangleGradient";
-import BodyHeartImg from "../../images/heart-img.svg";
+import HeartImgClean from "../../images/heart-img-clean.svg";
 import SectionHeading from "../SectionHeading";
+import Box from "./box";
 
 export default class RoadMap extends Component {
     render() {
@@ -34,6 +35,40 @@ export default class RoadMap extends Component {
                                 </DescriptionSubText>
                             </div>
                         </div>
+                        <RoadMapBody>
+                            <LogoComponent />
+                            <div class="level level-right">
+                                <Box>
+                                    <MainHeading>Q2 2018</MainHeading>
+                                    <SubHeading>
+                                        Whitepaper published
+                                    </SubHeading>
+                                    <BoxContent>
+                                        It rewards users with digital Karma
+                                        which are tradable tokens. doGood
+                                        rewards its community of passionate and
+                                        committed volunteers who make a
+                                        difference in their communities.
+                                    </BoxContent>
+                                </Box>
+                            </div>
+                            <div class="level level-left">
+                                <Box>
+                                    <MainHeading>Q3 2018</MainHeading>
+                                    <SubHeading>
+                                        Closed Alpha testing
+                                    </SubHeading>
+                                    <BoxContent>
+                                        It rewards users with digital Karma
+                                        which are tradable tokens. doGood
+                                        rewards its community of passionate and
+                                        committed volunteers who make a
+                                        difference in their communities.
+                                    </BoxContent>
+                                </Box>
+                            </div>
+                        </RoadMapBody>
+
                         <div className="columns is-gapless is-desktop" />
                     </div>
                 </ContainerBody>
@@ -72,28 +107,55 @@ const ContainerSection = styled.section.attrs({
     background: #ffffff;
 `;
 
-const Background = styled.div.attrs({})`
-    width: 100%;
-    height: 700px
-    opacity: 0.29;
-    margin-top: 158px;
-    position: absolute;
-    background-color: #deecff;
-    transform: skewY(16.5deg);
-    transform-origin: top left;
+const RoadMapBody = styled.div.attrs({})`
+    margin-top: 10rem;
 `;
 
-const Foreground = styled.div.attrs({})`
-    @media (min-width: 1088px) {
-        width: 100%;
-        height: 962px;
-        margin-top: 158px;
-        position: absolute;
-        background: url(${BodyHeartImg});
-        background-repeat: no-repeat;
-        background-position: 100% 50%;
-        background-size: 50%;
-    }
+const LogoComponent = styled.div.attrs({})`
+    height: 5.5rem;
+    background: url(${HeartImgClean});
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 28%;
+    margin-bottom: 2rem;
+`;
+
+const MainHeading = styled.div.attrs({})`
+    opacity: 0.6;
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+    margin-bottom: 1rem;
+`;
+
+const SubHeading = styled.div.attrs({})`
+    opacity: 0.8;
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+    margin-bottom: 0.6rem;
+`;
+
+const BoxContent = styled.div.attrs({})`
+    opacity: 0.6;
+    font-family: SFProText, Gilroy;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: 0.3px;
+    color: #ffffff;
 `;
 
 const DescriptionText = styled.div.attrs({

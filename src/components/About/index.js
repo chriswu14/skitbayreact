@@ -79,10 +79,6 @@ export default class About extends Component {
     }
 }
 
-const BulmaHero = ({ className, children }) => (
-    <section className={className}>{children}</section>
-);
-
 const ContainerBody = styled.div.attrs({ className: "hero-body" })`
     padding-top: 0px;
     @media (min-width: 769px) {
