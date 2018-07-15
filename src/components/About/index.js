@@ -26,7 +26,7 @@ export default class About extends Component {
                                     charitable actions.
                                 </DescriptionText>
                                 <RectangleGradient />
-                                <div className="columns is-desktop">
+                                <div className="columns is-gapless is-desktop">
                                     <div className="column is-10">
                                         <DescriptionSubText>
                                             <p>

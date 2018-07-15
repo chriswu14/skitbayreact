@@ -25,8 +25,8 @@ const SectionHeadingText = styled.h2.attrs({})`
         margin-left: 30px;
     }
 
-    @media (min-width: 1088px) {
-        font-size: 282px;
+    @media (min-width: 1200px) {
+        font-size: 262px;
         margin-left: 70px;
     }
 `;
