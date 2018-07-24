@@ -1,0 +1,52 @@
+Arguments: 
+  /Users/chris/.nvm/versions/node/v8.9.4/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js install
+
+PATH: 
+  /Users/chris/.rvm/gems/ruby-2.0.0-p648/bin:/Users/chris/.rvm/gems/ruby-2.0.0-p648@global/bin:/Users/chris/.rvm/rubies/ruby-2.0.0-p648/bin:/Users/chris/.nvm/versions/node/v8.9.4/bin:/Applications/Parity\ Ethereum.app/Contents/MacOS/parity:/opt/mongodb/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl:usr/local/go/bin:/Users/chris/.rvm/bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.9.4
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "skitbay",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+      "start": "parcel ./src/index.html --no-hmr --no-cache",
+      "build": "parcel build ./src/index.html --no-cache"
+    },
+    "license": "MIT",
+    "dependencies": {
+      "bulma": "^0.7.1",
+      "features": "^0.1.0",
+      "parcel-bundler": "^1.9.2",
+      "react": ">=16.0.0",
+      "react-dom": ">=16.0.0",
+      "styled-components": "^3.3.3"
+    },
+    "devDependencies": {
+      "babel-plugin-transform-object-rest-spread": "^6.26.0",
+      "node-sass": "^4.9.0",
+      "parcel-bundler": "^1.9.2",
+      "parcel-plugin-clean-dist": "^0.0.6"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: connect ECONNREFUSED 10.162.145.184:80
+      at Object._errnoException (util.js:1022:11)
+      at _exceptionWithHostPort (util.js:1044:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)
