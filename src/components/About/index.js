@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 import RectangleGradient from "../RectangleGradient";
-import BodyHeartImg from "../../images/heart-img.svg";
+import BodyImage from "../../images/skitbay_about.png";
 import SectionHeading from "../SectionHeading";
 
 export default class About extends Component {
@@ -10,15 +10,15 @@ export default class About extends Component {
         return (
             <ContainerSection>
                 <Background />
-                <Foreground />
-                <div className="level">
-                    <SectionHeading>about</SectionHeading>
-                </div>
-
+                <Foreground />               
                 <ContainerBody>
                     <div className="container">
                         <div className="columns is-gapless is-desktop">
+                            <div className="column" />
                             <div className="column">
+                                <AboutSectionH1>
+                                    about
+                                </AboutSectionH1>
                                 <DescriptionText>
                                     Skitbay is a Charity Social Network built on
                                     top of STEEM blockchain which pays Skitbayers
@@ -69,8 +69,7 @@ export default class About extends Component {
                                         </DescriptionSubText>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="column" />
+                            </div>                            
                         </div>
                     </div>
                 </ContainerBody>
@@ -84,16 +83,14 @@ const BulmaHero = ({ className, children }) => (
 );
 
 const ContainerBody = styled.div.attrs({ className: "hero-body" })`
-    padding-top: 0px;
-    @media (min-width: 769px) {
-        padding-top: 88px;
-    }
+
 `;
 
 const ContainerSection = styled.section.attrs({
     className: "hero"
 })`
     background: #ffffff;
+    position: relative;
 `;
 
 const Background = styled.div.attrs({})`
@@ -110,13 +107,13 @@ const Background = styled.div.attrs({})`
 const Foreground = styled.div.attrs({})`
     @media (min-width: 1088px) {
         width: 100%;
-        height: 962px;
+        height: 100%;
         margin-top: 158px;
         position: absolute;
-        background: url(${BodyHeartImg});
+        background: url(${BodyImage});
         background-repeat: no-repeat;
-        background-position: 100% 50%;
-        background-size: 50%;
+        background-position: -30% 0;
+        background-size: 66%;
     }
 `;
 
@@ -149,5 +146,14 @@ const DescriptionSubText = styled.div.attrs({})`
 
     p {
         margin-top: 20px;
+    }
+`;
+
+const AboutSectionH1 = styled.h1.attrs({
+    className: 'title is-1'
+})`
+    &&& {
+      margin-bottom: 2.5rem;
+      font-size: 5rem;
     }
 `;

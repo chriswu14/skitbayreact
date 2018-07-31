@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import LogoText from '../LogoText'
-import BodyHeartImg from '../../images/heart-img.svg'
+import BodyImage from '../../images/skitbay_intro.png'
 
 export default class Landing extends Component {
   render() {
@@ -10,7 +10,7 @@ export default class Landing extends Component {
       <Hero>
         <HeroBody>
           <div className="container">
-            <div className=" columns is-gapless">
+            <div className="columns is-gapless">
                 <div className="column">
                   <TopSectionH2>
                     Shop thousands of products with cryptocurrencies
@@ -35,20 +35,12 @@ export default class Landing extends Component {
 
 const Hero = styled.section.attrs({
   className: 'hero'
-})`
-  background: #d91839;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(301deg, #d91839, #4f136d);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(301deg, #d91839, #4f136d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+})`  
+  background: -webkit-linear-gradient(306deg, #29e0ba, #2387ac 34%, #133c6d);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(306deg, #29e0ba, #2387ac 34%, #133c6d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   * {
     color: white;
-  }
-
-  @media(min-width: 769px) {
-    .hero-body {
-      padding-top: 14rem;
-      padding-bottom: 14rem;
-    }
   }
 `;
 
@@ -59,10 +51,10 @@ const HeroBody = styled.div.attrs({
   padding-bottom: 8rem;
 
   @media(min-width: 769px) {
-    background: url(${BodyHeartImg});
+    background: url(${BodyImage});
     background-repeat: no-repeat;
-    background-position: 100% 50%;
-    background-size: 50%;
+    background-position: 110% 100%;
+    background-size: auto 85%;
   }
 `;
 
