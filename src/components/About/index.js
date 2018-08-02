@@ -10,20 +10,18 @@ export default class About extends Component {
         return (
             <ContainerSection>
                 <Background />
-                <Foreground />               
+                <Foreground />
                 <ContainerBody>
                     <div className="container">
                         <div className="columns is-gapless is-desktop">
                             <div className="column" />
                             <div className="column">
-                                <AboutSectionH1>
-                                    about
-                                </AboutSectionH1>
+                                <AboutSectionH1>about</AboutSectionH1>
                                 <DescriptionText>
                                     Skitbay is a Charity Social Network built on
-                                    top of STEEM blockchain which pays Skitbayers
-                                    for organizing, volunteering and voting for
-                                    charitable actions.
+                                    top of STEEM blockchain which pays
+                                    Skitbayers for organizing, volunteering and
+                                    voting for charitable actions.
                                 </DescriptionText>
                                 <RectangleGradient />
                                 <div className="columns is-desktop">
@@ -69,7 +67,7 @@ export default class About extends Component {
                                         </DescriptionSubText>
                                     </div>
                                 </div>
-                            </div>                            
+                            </div>
                         </div>
                     </div>
                 </ContainerBody>
@@ -82,9 +80,7 @@ const BulmaHero = ({ className, children }) => (
     <section className={className}>{children}</section>
 );
 
-const ContainerBody = styled.div.attrs({ className: "hero-body" })`
-
-`;
+const ContainerBody = styled.div.attrs({ className: "hero-body" })``;
 
 const ContainerSection = styled.section.attrs({
     className: "hero"
@@ -97,7 +93,7 @@ const Background = styled.div.attrs({})`
     width: 100%;
     height: 700px
     opacity: 0.29;
-    margin-top: 158px;
+    margin-top: 11.1rem;
     position: absolute;
     background-color: #deecff;
     transform: skewY(16.5deg);
@@ -108,7 +104,7 @@ const Foreground = styled.div.attrs({})`
     @media (min-width: 1088px) {
         width: 100%;
         height: 100%;
-        margin-top: 158px;
+        margin-top: 11.1rem;
         position: absolute;
         background: url(${BodyImage});
         background-repeat: no-repeat;
@@ -150,10 +146,10 @@ const DescriptionSubText = styled.div.attrs({})`
 `;
 
 const AboutSectionH1 = styled.h1.attrs({
-    className: 'title is-1'
+    className: "title is-1"
 })`
     &&& {
-      margin-bottom: 2.5rem;
-      font-size: 5rem;
+        margin-bottom: 2.5rem;
+        font-size: 5rem;
     }
 `;

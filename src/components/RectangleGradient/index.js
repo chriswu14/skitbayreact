@@ -9,10 +9,8 @@ export default class RectangleGradient extends Component {
 
 const RectangleGradientSpan = styled.div`
     &&& {
-        width: 260px;
-        height: 4px;
-        background: #d91839; /* fallback for old browsers */
-        background: -webkit-linear-gradient(to left, #d91839, #4f136d);
-        background-image: linear-gradient(to left, #d91839, #4f136d);
+        width: 16.25rem;
+        height: 0.25rem;
+        background-color: #ffbb62;
     }
 `;
