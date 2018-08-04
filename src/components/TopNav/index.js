@@ -18,7 +18,7 @@ export default class TopNav extends Component {
       <nav className="navbar is-fixed-top">
         <div className="container">
           <div className="navbar-brand">
-            <a className="navbar-item" href="https://bulma.io">
+            <a className="navbar-item" href="/">
               <LogoText/>
             </a>
             <div className={"navbar-burger burger " + toggleClass} onClick={this.toggleBurger}>
