@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-import RectangleGradient from "../RectangleGradient";
+import RectangleGradient from "../sharedComponents/RectangleGradient";
 import BodyImage from "../../images/skitbay_about.png";
-import SectionHeading from "../SectionHeading";
+import SectionHeading from "../sharedComponents/SectionHeading";
+import DescriptionText from "../sharedComponents/DescriptionText";
 
 export default class About extends Component {
     render() {
@@ -16,7 +17,7 @@ export default class About extends Component {
                         <div className="columns is-gapless is-desktop">
                             <div className="column" />
                             <div className="column">
-                                <AboutSectionH1>about</AboutSectionH1>
+                                <SectionHeading>about</SectionHeading>
                                 <DescriptionText>
                                     Skitbay is a Charity Social Network built on
                                     top of STEEM blockchain which pays
@@ -76,10 +77,6 @@ export default class About extends Component {
     }
 }
 
-const BulmaHero = ({ className, children }) => (
-    <section className={className}>{children}</section>
-);
-
 const ContainerBody = styled.div.attrs({ className: "hero-body" })``;
 
 const ContainerSection = styled.section.attrs({
@@ -109,22 +106,8 @@ const Foreground = styled.div.attrs({})`
         background: url(${BodyImage});
         background-repeat: no-repeat;
         background-position: -30% 0;
-        background-size: 66%;
-    }
-`;
-
-const DescriptionText = styled.div.attrs({
-    className: "subtitle is-2"
-})`
-    &&& {
-        font-family: Gilroy;
-        font-size: 24px;
-        font-weight: 900;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 40px;
-        letter-spacing: 0.3px;
-        color: #544c63;
+        background-size: 58%;
+        z-index: 1;
     }
 `;
 
@@ -142,14 +125,5 @@ const DescriptionSubText = styled.div.attrs({})`
 
     p {
         margin-top: 20px;
-    }
-`;
-
-const AboutSectionH1 = styled.h1.attrs({
-    className: "title is-1"
-})`
-    &&& {
-        margin-bottom: 2.5rem;
-        font-size: 5rem;
     }
 `;

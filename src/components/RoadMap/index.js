@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-import RectangleGradient from "../RectangleGradient";
-import SectionHeading from "../SectionHeading";
+import RectangleGradient from "../sharedComponents/RectangleGradient";
+import SectionHeading from "../sharedComponents/SectionHeading";
+import DescriptionText from "../sharedComponents/DescriptionText";
 import Logo from "../../images/logo.svg";
 
 export default class RoadMap extends Component {
@@ -71,13 +72,11 @@ export default class RoadMap extends Component {
         return (
             <ContainerSection>
                 <ContainerBody>
-                    <div className="container">
-                        <div className="level">
-                            <SectionHeading>roadmap</SectionHeading>
-                        </div>
+                    <div className="container">                                                                     
                         <div className="columns is-gapless is-desktop">
                             <div className="column">
-                                <DescriptionText>
+                                <SectionHeading color="white">roadmap</SectionHeading> 
+                                <DescriptionText color="white">
                                     Stage one of planning and development is
                                     currently underway. Expected timeline for
                                     beta testing is in the last quarter of 2018.
@@ -234,23 +233,6 @@ const LogoComponent = styled.div.attrs({
 
     @media (min-width: 769px) {
         background-size: auto;
-    }
-`;
-
-const DescriptionText = styled.div`
-    font-family: Gilroy;
-    font-size: 1rem;
-    font-weight: 900;
-    line-height: 2;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: 0.05rem;
-    color: #ffffff;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-
-    @media (min-width: 769px) {
-        font-size: 1.5rem;
     }
 `;
 

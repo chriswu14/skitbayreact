@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import LogoText from '../LogoText'
+import LogoText from '../sharedComponents/LogoText'
 import BodyImage from '../../images/skitbay_intro.png'
 
 export default class Landing extends Component {
@@ -53,7 +53,7 @@ const HeroBody = styled.div.attrs({
   @media(min-width: 769px) {
     background: url(${BodyImage});
     background-repeat: no-repeat;
-    background-position: 110% 100%;
+    background-position: 100% 100%;
     background-size: auto 85%;
   }
 `;
