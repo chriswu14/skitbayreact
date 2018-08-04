@@ -25,6 +25,7 @@ npm manifest:
     "license": "MIT",
     "dependencies": {
       "bulma": "^0.7.1",
+      "bulma-extensions": "^2.2.1",
       "features": "^0.1.0",
       "parcel-bundler": "^1.9.2",
       "react": ">=16.0.0",
@@ -938,6 +939,10 @@ Lockfile:
   builtin-status-codes@^3.0.0:
     version "3.0.0"
     resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
+  
+  bulma-extensions@^2.2.1:
+    version "2.2.1"
+    resolved "https://registry.yarnpkg.com/bulma-extensions/-/bulma-extensions-2.2.1.tgz#b77e75eb6eb47f8eb79d45450888d49d22d72f96"
   
   bulma@^0.7.1:
     version "0.7.1"

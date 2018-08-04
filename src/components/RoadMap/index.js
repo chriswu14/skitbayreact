@@ -11,38 +11,33 @@ export default class RoadMap extends Component {
         super(props);
         this.roadmap = [
             {
-                heading: "Q2 2018",
+                heading: "September 2018",
                 subheading: "Whitepaper published",
-                description: `It rewards users with digital Karma which are tradable tokens. 
-                    doGood rewards its community of passionate and committed volunteers who make a difference in their communities. `,
+                description: `Detailed paper about Skitbay goals, technology, market strategy and more released.`,
                 className: "active"
             },
             {
                 heading: "Q3 2018",
                 subheading: "Closed Alpha Testing",
-                description: `It rewards users with digital Karma which are tradable tokens. 
-                    doGood rewards its community of passionate and committed volunteers who make a difference in their communities. `,
+                description: `Core product development over. Polishing of the functionalities and UI, token economics and bug testing.`,
                 className: ""
             },
             {
                 heading: "Q4 2018",
-                subheading: "Public Beta testing",
-                description: `It rewards users with digital Karma which are tradable tokens. 
-                    doGood rewards its community of passionate and committed volunteers who make a difference in their communities. `,
+                subheading: "Open beta testing",
+                description: `Fully functional application released to the public. Only a limited of shops available and not all cryptocurrencies supported for transactions.`,
                 className: ""
             },
             {
                 heading: "Q1 2019",
-                subheading: "Testnet active",
-                description: `It rewards users with digital Karma which are tradable tokens. 
-                    doGood rewards its community of passionate and committed volunteers who make a difference in their communities. `,
+                subheading: "Development and expansion",
+                description: `Skitpay payment gateway now supports most cryptocurrencies and more than 300 shops available on the marketplace.`,
                 className: ""
             },
             {
-                heading: "Q2 2019",
-                subheading: "Main net live",
-                description: `It rewards users with digital Karma which are tradable tokens. 
-                    doGood rewards its community of passionate and committed volunteers who make a difference in their communities. `,
+                heading: "Q3/Q4 2019",
+                subheading: "Mass adoption and Skitpay standalone",
+                description: `The Skitbay social marketplace is fully functional and accessible worldwide, Skitpay becomes a standalone app for crypto-payments.`,
                 className: ""
             }
         ];
@@ -113,7 +108,8 @@ const ContainerBody = styled.div.attrs({ className: "hero-body" })`
 `;
 
 const ContainerSection = styled.section.attrs({
-    className: "hero"
+    className: "hero",
+    id: 'roadMap'
 })`
     background: #ffffff;
 `;
@@ -238,7 +234,7 @@ const LogoComponent = styled.div.attrs({
 
 const Box = styled.div.attrs({})`
     .box {
-        min-height: 19rem;
+        min-height: 16rem;
         overflow: hidden;
         background-color: rgba(39, 98, 126, 0.1);
         background-blend-mode: overlay;

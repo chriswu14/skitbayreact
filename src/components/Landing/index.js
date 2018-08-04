@@ -13,13 +13,13 @@ export default class Landing extends Component {
             <div className="columns is-gapless">
                 <div className="column">
                   <TopSectionH2>
-                    Shop thousands of products with cryptocurrencies
+                    Shop, Share, Earn.
                   </TopSectionH2>
                   <TopSectionH1>
                     <LogoText/>
                   </TopSectionH1>
                   <p>
-                    Skitbay is an online-marketplace built on top of STEEM blockchain with zero fees, guranteed quality, and rewards for both sellers and buyers.
+                    Skitbay combines marketplace, social network and blockchain to bring to you the next generation shopping experience. Shop through hundreds of stores and thousands of products, pay using cryptocurrencies, and get financially rewarded with the native $SKT token for posting, sharing or rating products.
                   </p>
                 </div>
                 <div className="column" >

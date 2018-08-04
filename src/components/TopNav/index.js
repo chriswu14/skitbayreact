@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
-
-import LogoText from '../LogoText'
+import LogoText from '../sharedComponents/LogoText'
 
 export default class TopNav extends Component {
   constructor(props){
@@ -31,22 +29,16 @@ export default class TopNav extends Component {
           </div>
           <div className={"navbar-menu " + toggleClass}>
             <div className="navbar-end">
-              <a className="navbar-item" href="#">
+              <a className="navbar-item" href="#about" onClick={this.toggleBurger}>
                 ABOUT
               </a>
-              <a className="navbar-item" href="#">
+              <a className="navbar-item" href="#roadMap" onClick={this.toggleBurger}>
                 ROADMAP
-              </a>
-              <a className="navbar-item" href="#">
-                SOCIAL MEDIA
-              </a>
-              <a className="navbar-item" href="#">
+              </a>             
+              <a className="navbar-item" href="#team" onClick={this.toggleBurger}>
                 TEAM
-              </a>
-              <a className="navbar-item" href="#">
-                PRESS
-              </a>
-              <a className="navbar-item" href="#">
+              </a>            
+              <a className="navbar-item" href="#faq" onClick={this.toggleBurger}>
                 FAQ
               </a>
             </div>

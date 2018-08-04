@@ -19,51 +19,20 @@ export default class About extends Component {
                             <div className="column">
                                 <SectionHeading>about</SectionHeading>
                                 <DescriptionText>
-                                    Skitbay is a Charity Social Network built on
-                                    top of STEEM blockchain which pays
-                                    Skitbayers for organizing, volunteering and
-                                    voting for charitable actions.
+                                    Tired of giving up your content, data and time on social medias and seeing little to no returns for your contribution ? The solution is here.
                                 </DescriptionText>
                                 <RectangleGradient />
                                 <div className="columns is-desktop">
                                     <div className="column is-10">
                                         <DescriptionSubText>
                                             <p>
-                                                It rewards users with digital
-                                                Karma which are tradable tokens.
-                                                Skitbay rewards its community of
-                                                passionate and committed
-                                                volunteers who make a difference
-                                                in their communities. By
-                                                rewarding volunteers and
-                                                charity, Skitbay recognize their
-                                                commitment and effort to aid a
-                                                cause.
+                                                Skitbay uses blockchain technology to create a marketplace that better integrates the social experience of offline shopping to online shopping. The social marketplace connects crypto- currencies users directly to sellers, eliminating intermediaries as well as empowering individuals to act as free agents and capture profit that is rightfully their own.
                                             </p>
                                             <p>
-                                                Using blockchain technology
-                                                could also change the way people
-                                                contribute to charities. Since
-                                                blockchain technology eliminates
-                                                the need for third parties and
-                                                makes transactions fully
-                                                transparent, it could deliver
-                                                significant benefits in
-                                                improving trust.
+                                                The revolutionary Steem SMT technology on top of which Skitbay is built turns « likes » into currency. By rewarding users for their contribution Skitbay aims to become a self serving ecosystem where individuals promote the brands and products they like and get automatically, and transparently rewarded for it while brands and shop owners profit from increased exposition and low cost advertisement.
                                             </p>
                                             <p>
-                                                Being a Social Network, Skitbay
-                                                is designed to be a place where
-                                                people can share, discuss about
-                                                charities and social issues they
-                                                care about, connect with
-                                                like-minded people and
-                                                non-profits, and take actions by
-                                                voting, commenting, creating
-                                                events, signing petitions,
-                                                raising money or making
-                                                donations in a fully transparent
-                                                platform.
+                                                The native Skitpay payment gateway will allow transactions to be settled using all verified cryptocurrencies in a totally safe and easy to use way. At term, Skitpay will function as a standalone app and aims to become the go-to cryptocurrency mobile payment platform worldwide.
                                             </p>
                                         </DescriptionSubText>
                                     </div>
@@ -80,7 +49,8 @@ export default class About extends Component {
 const ContainerBody = styled.div.attrs({ className: "hero-body" })``;
 
 const ContainerSection = styled.section.attrs({
-    className: "hero"
+    className: 'hero',
+    id: 'about'
 })`
     background: #ffffff;
     position: relative;
