@@ -9,6 +9,7 @@
   "license": "MIT",
   "dependencies": {
     "bulma": "^0.7.1",
+    "bulma-extensions": "^2.2.1",
     "features": "^0.1.0",
     "parcel-bundler": "^1.9.2",
     "react": ">=16.0.0",
