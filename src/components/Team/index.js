@@ -5,31 +5,66 @@ import RectangleGradient from "../sharedComponents/RectangleGradient";
 import SectionHeading from "../sharedComponents/SectionHeading";
 import DescriptionText from "../sharedComponents/DescriptionText";
 
+import AndrasHajgatoImg from '../../images/team/AndrasHajgato.jpg';
+import CalebJiuImg from '../../images/team/CalebJiu.jpg';
+import CecileDingImg from '../../images/team/CecileDing.jpg';
+import ChrisWuImg from '../../images/team/ChrisWu.jpg';
+import DanniLiuImg from '../../images/team/DanniLiu.jpg';
+import EkitchoKeoImg from '../../images/team/EkitchoKeo.jpg';
+import TianHaoLiuImg from '../../images/team/TianHaoLiu.jpg';
+import VictorDoanImg from '../../images/team/VictorDoan.jpg';
+
+
 export default class Landing extends Component {
   constructor() {
     super();
     this.state = {
         teamMembers: [
           {
-            imgUrl: 'https://bulma.io/images/placeholders/128x128.png',
+            imgUrl: EkitchoKeoImg,
+            fullName: 'Ekitcho Keo',
+            teamPosition: 'Advisor'
+          },
+          {
+            imgUrl: TianHaoLiuImg,
+            fullName: 'Tian Hao Liu',
+            teamPosition: 'Advisor'
+          },          
+          {
+            imgUrl: VictorDoanImg,
+            fullName: 'Victor Doan',
+            teamPosition: 'Founder and CEO'
+          },
+          {
+            imgUrl: DanniLiuImg,
+            fullName: 'Danni Liu',
+            teamPosition: 'Co-founder and COO'
+          },        
+          {
+            imgUrl: ChrisWuImg,
             fullName: 'Chris Wu',
-            teamPosition: 'CTO'
+            teamPosition: 'Co-founder and Wizard'
+          },
+          {
+            imgUrl: AndrasHajgatoImg,
+            fullName: 'Andras Hajgato',
+            teamPosition: 'Co-founder and Designer'
           },
           {
             imgUrl: 'https://bulma.io/images/placeholders/128x128.png',
-            fullName: 'Chris Wu',
-            teamPosition: 'CTO'
+            fullName: 'Tony Xu',
+            teamPosition: 'Co-founder and Dev Weapon'
           },
           {
-            imgUrl: 'https://bulma.io/images/placeholders/128x128.png',
-            fullName: 'Chris Wu',
-            teamPosition: 'CTO'
+            imgUrl: CalebJiuImg,
+            fullName: 'Caleb Jiu',
+            teamPosition: 'Assistant Director'
           },
           {
-            imgUrl: 'https://bulma.io/images/placeholders/128x128.png',
-            fullName: 'Chris Wu',
-            teamPosition: 'CTO'
-          }
+            imgUrl: CecileDingImg,
+            fullName: 'Cecile Ding',
+            teamPosition: 'Marketplace Analyst'
+          }          
         ],       
     };   
   }
@@ -52,7 +87,7 @@ export default class Landing extends Component {
               {
                 this.state.teamMembers.map((value, index) => {                           
                   return (
-                    <div key={index} className="column is-half-mobile is-one-quarter-desktop">  
+                    <div key={index} className="column is-half-mobile is-one-third-tablet is-one-quarter-desktop">  
                       <TeamCard {...value}/>        
                     </div>
                   );
@@ -110,9 +145,7 @@ const TeamCardName = styled.div.attrs({
   letter-spacing: 0.05rem;
 `;
 
-const TeamCardPosition = styled.div.attrs({
-  className: 'is-capitalized'
-})`
+const TeamCardPosition = styled.div`
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
   color: #238fad;  
