@@ -81,15 +81,13 @@ const Foreground = styled.div.attrs({})`
     }
 `;
 
-const DescriptionSubText = styled.div.attrs({})`
-    &&& {
-        font-family: SFProText-Light, Gilroy;
+const DescriptionSubText = styled.div`
+    {       
         font-size: 18px;
         font-weight: 300;
         font-style: normal;
         font-stretch: normal;
-        line-height: 40px;
-        letter-spacing: 0.3px;
+        line-height: 40px;    
         color: #544c63;
     }
 

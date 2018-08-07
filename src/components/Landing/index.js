@@ -18,9 +18,11 @@ export default class Landing extends Component {
                   <TopSectionH1>
                     <LogoText/>
                   </TopSectionH1>
-                  <p>
-                    Skitbay combines marketplace, social network and blockchain to bring to you the next generation shopping experience. Shop through hundreds of stores and thousands of products, pay using cryptocurrencies, and get financially rewarded with the native $SKT token for posting, sharing or rating products.
-                  </p>
+                  <DescriptionSubText>
+                    <p>
+                      Skitbay combines marketplace, social network and blockchain to bring to you the next generation shopping experience. Shop through hundreds of stores and thousands of products, pay using cryptocurrencies, and get financially rewarded with the native $SKT token for posting, sharing or rating products.
+                    </p>
+                  </DescriptionSubText>
                 </div>
                 <div className="column" >
 
@@ -73,5 +75,15 @@ const TopSectionH2 = styled.h2.attrs({
   &&& {
     margin-bottom: 3rem;
     font-weight: normal;
+  }
+`;
+
+const DescriptionSubText = styled.div`
+  {     
+      font-size: 18px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 40px;       
   }
 `;

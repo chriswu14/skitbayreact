@@ -9,8 +9,7 @@ const DescriptionText = styled.div.attrs({
         font-weight: 900;
         font-style: normal;
         font-stretch: normal;
-        line-height: 40px;
-        letter-spacing: 0.3px;
+        line-height: 40px;       
         color: ${props => props.color};
     }
 `;

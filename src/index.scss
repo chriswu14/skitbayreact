@@ -3,6 +3,7 @@ $family-sans-serif: Gilroy, BlinkMacSystemFont, -apple-system, "Segoe UI",
     "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 @import "../node_modules/bulma/bulma";
 @import "../node_modules/bulma-extensions/bulma-timeline/dist/css/bulma-timeline.sass";
+@import "../node_modules/bulma-extensions/bulma-badge/dist/css/bulma-badge.sass";
 
 // fix bulma issues
 @media screen and (min-width: 1088px) {

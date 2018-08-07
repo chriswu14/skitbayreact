@@ -19,7 +19,7 @@ export default class TopNav extends Component {
         <div className="container">
           <div className="navbar-brand">
             <a className="navbar-item" href="/">
-              <LogoText/>
+              <LogoText badge="Beta"/>
             </a>
             <div className={"navbar-burger burger " + toggleClass} onClick={this.toggleBurger}>
               <span></span>

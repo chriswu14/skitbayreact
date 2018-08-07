@@ -242,8 +242,7 @@ const Box = styled.div.attrs({})`
             rgba(255, 255, 255, 0.15),
             rgba(255, 255, 255, 0.2)
         );
-        border-radius: 0rem;
-        letter-spacing: 0.3px;
+        border-radius: 0rem;      
         font-family: Gilroy;
         font-style: normal;
         font-stretch: normal;

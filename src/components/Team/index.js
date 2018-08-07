@@ -14,6 +14,9 @@ import EkitchoKeoImg from "../../images/team/EkitchoKeo.jpg";
 import TianHaoLiuImg from "../../images/team/TianHaoLiu.jpg";
 import VictorDoanImg from "../../images/team/VictorDoan.jpg";
 import TonyXuImg from "../../images/team/TonyXu.jpg";
+import ChristopherKhimImg from "../../images/team/ChristopherKhim.jpg";
+import CaseyCarterImg from "../../images/team/CaseyCarter.jpg";
+import SosoZouImg from "../../images/team/SosoZou.jpg";
 
 export default class Landing extends Component {
     constructor() {
@@ -26,7 +29,7 @@ export default class Landing extends Component {
                     teamPosition: "Advisor"
                 },
                 {
-                    imgUrl: TianHaoLiuImg,
+                    imgUrl: TianHaoLiuImg, 
                     fullName: "Tian Hao Liu",
                     teamPosition: "Advisor"
                 },
@@ -43,7 +46,7 @@ export default class Landing extends Component {
                 {
                     imgUrl: ChrisWuImg,
                     fullName: "Chris Wu",
-                    teamPosition: "Co-founder and Wizard"
+                    teamPosition: "Co-founder and CTO"
                 },
                 {
                     imgUrl: AndrasHajgatoImg,
@@ -53,7 +56,7 @@ export default class Landing extends Component {
                 {
                     imgUrl: TonyXuImg,
                     fullName: "Tony Xu",
-                    teamPosition: "Co-founder and Dev Weapon"
+                    teamPosition: "Co-founder and Developer"
                 },
                 {
                     imgUrl: CalebJiuImg,
@@ -64,7 +67,22 @@ export default class Landing extends Component {
                     imgUrl: CecileDingImg,
                     fullName: "Cecile Ding",
                     teamPosition: "Marketplace Analyst"
-                }
+                },
+                {
+                  imgUrl: SosoZouImg,
+                  fullName: "Soso Zou",
+                  teamPosition: "Marketplace Analyst"
+                },
+                {
+                  imgUrl: CaseyCarterImg,
+                  fullName: "Casey Carter",
+                  teamPosition: "Developer and Technical Writer"
+                },
+                {
+                  imgUrl: ChristopherKhimImg,
+                  fullName: "Christopher Khim",
+                  teamPosition: "Content Editor"
+                }              
             ]
         };
     }
@@ -79,8 +97,7 @@ export default class Landing extends Component {
                                 <DescriptionText>
                                     With decades of experience our team is
                                     comprised of people from around the world.
-                                    All focused on one goal, building good
-                                    Karma.
+                                    All focused on one goal, never settle.
                                 </DescriptionText>
                                 <RectangleGradient />
                             </div>
