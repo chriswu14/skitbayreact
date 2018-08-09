@@ -17,22 +17,22 @@ export default class About extends Component {
                         <div className="columns is-gapless is-desktop">
                             <div className="column" />
                             <div className="column">
-                                <SectionHeading>about</SectionHeading>
+                                <SectionHeading>About</SectionHeading>
                                 <DescriptionText>
-                                    Tired of giving up your content, data and time on social medias and seeing little to no returns for your contribution ? The solution is here.
+                                    Discover the first marketplace without barriers of entry or limits of borders. On Skitbay, everyone speaks the same language, cryptocurrencies.
                                 </DescriptionText>
                                 <RectangleGradient />
                                 <div className="columns is-desktop">
                                     <div className="column is-10">
                                         <DescriptionSubText>
                                             <p>
-                                                Skitbay uses blockchain technology to create a marketplace that better integrates the social experience of offline shopping to online shopping. The social marketplace connects crypto- currencies users directly to sellers, eliminating intermediaries as well as empowering individuals to act as free agents and capture profit that is rightfully their own.
+                                                With Skitbay, if you are a cryptocurrency holder there is no need to exchange your coins for fiat money to make a purchase. Our smartphone application gives users all the tools necessary to buy, sell and exchange within the new economy. Flawlessly integrated and user-friendly the Skitbay app fuses marketplace, web wallet and cryptocurrency payment gateway all in one platform.
                                             </p>
                                             <p>
-                                                The revolutionary Steem SMT technology on top of which Skitbay is built turns « likes » into currency. By rewarding users for their contribution Skitbay aims to become a self serving ecosystem where individuals promote the brands and products they like and get automatically, and transparently rewarded for it while brands and shop owners profit from increased exposition and low cost advertisement.
+                                                Skitbay integrates a social reward technology which introduces real financial incentives to every interactions in the community. Users get rewarded with the $SKT token for rating products that they bought, which they can then spend to buy products or services on the platform.
                                             </p>
                                             <p>
-                                                The native Skitpay payment gateway will allow transactions to be settled using all verified cryptocurrencies in a totally safe and easy to use way. At term, Skitpay will function as a standalone app and aims to become the go-to cryptocurrency mobile payment platform worldwide.
+                                                The native Skitpay payment gateway will allow transactions to be settled using all verified cryptocurrencies in a totally safe and easy to use environment. At term, Skitpay will function as a standalone app and aims to become the go-to cryptocurrency mobile payment platform worldwide.
                                             </p>
                                         </DescriptionSubText>
                                     </div>
@@ -75,7 +75,7 @@ const Foreground = styled.div.attrs({})`
         position: absolute;
         background: url(${BodyImage});
         background-repeat: no-repeat;
-        background-position: -30% 0;
+        background-position: -25% 0;
         background-size: 58%;
         z-index: 1;
     }

@@ -12,19 +12,23 @@ export default class Landing extends Component {
       faqs: [
         {
           question: 'What is Skitbay?',
-          anwser: 'Skitbay is a reward based social marketplace smartphone application that lets you shop online hundreds of products and settle the transaction using cryptocurrencies. We call Skitbay a reward based social marketplace because beyond simply shopping, the Skitbay app lets you share pictures of your purchases, recommend products to your friends, share your wishlists and be rewarded financially for your contribution to the life and dynamism of the platform.'
+          anwser: 'Skitbay is the first marketplace that lets you shop through hundreds of products and settle the transaction using cryptocurrencies on a smartphone application. We call Skitbay a reward-based social marketplace because beyond simply shopping, Skitbay rewards users financially for contributing to the life and dynamism of the platform with actions like rating purchased products or recommending them to their friends.'
+        },
+        {
+          question: 'What is Skitpay?',
+          anwser: 'Skitpay is designed to be a user-friendly cryptocurrency mobile payment gateway which allows users to send cryptocurrencies to an email address or a phone number. In due course, Skitpay will function as standalone app working similarly to WeChat pay or Alipay.'
         },
         {
           question: 'What problems is Skitbay solving?',
-          anwser: 'Skitbay is breaking up the old business model of social medias and advertisement companies by building an ecosystem in which revenues are more fairly distributed across all stakeholders. On Skitbay, every user has the occasion to earn money from it’s network. Skitbay could help build a special relationship between sellers and consumers where instead of being bombarded by unwanted advertisement, users promote products they like a get rewarded for it.'
+          anwser: 'Skitbay is totally anonymous and open to everybody without restraints. The only thing you need to access Skitbay is a mobile phone, hence the platform has a huge potential to spread worldwide, especially in areas with unbanked populations which had previously little to no access to traditional online marketplaces.'
         },
         {
           question: 'What stage is Skitbay currently at? When can I try it?',
-          anwser: 'Skitbay is currently in development stage. The public beta testing is planned for release on Q4 2018. In the meantime please refer to our twitter for the latest updates.'
+          anwser: 'Skitbay is currently in development stage. The public beta testing is planned for release on Q4 2018. In the meantime, please refer to our twitter for the latest updates.'
         },
         {
           question: 'What makes Skitbay unique?',
-          anwser: 'Skitbay is an innovative solution that has the potential to empower thousands of people to generate a new source of income from their network and following as well as a remarkable chance for shop owner around the world to start accepting cryptocurrency payments in a safe and easy to use environment. The fact that we are committed to releasing the product fully functional without doing an ICO proves that Skitbay is not another hollow blockchain project, but really here to add value to it’s users and the cryptocurrencies community in general.'
+          anwser: 'Skitbay is an innovative solution that has the potential to empower millions of individuals anywhere in the world to sell their products and services on the global market as well as a remarkable chance for shop owners to start accepting cryptocurrency payments in a safe and user-friendly way. Our relentless goal to release the application fully functional without doing an ICO is a living proof that Skitbay is not another hyped blockchain project. We are here to add value to our users and the crypto-community.'
         }
       ],
     };
@@ -36,10 +40,10 @@ export default class Landing extends Component {
           <div className="container">
             <div className="columns is-gapless is-desktop">
               <div className="column">
-                <SectionHeading>faq</SectionHeading>
-                <DescriptionText>
+                <SectionHeading>FAQ</SectionHeading>
+                {/* <DescriptionText>
                   General questions and answers about Skitbay
-                </DescriptionText>
+                </DescriptionText> */}
                 <RectangleGradient />
               </div>
               <div className="column" />

@@ -13,31 +13,31 @@ export default class RoadMap extends Component {
             {
                 heading: "September 2018",
                 subheading: "Whitepaper published",
-                description: `Detailed paper about Skitbay goals, technology, market strategy and more released.`,
+                description: `Detailed whitepaper about Skitbay goals, technology, market strategy and more released.`,
                 className: "active"
             },
             {
                 heading: "Q3 2018",
                 subheading: "Closed Alpha Testing",
-                description: `Core product development over. Polishing of the functionalities and UI, token economics and bug testing.`,
+                description: `Core product development fulfilled. Polishing of the functionalities and UI, token economics and bug-fixing.`,
                 className: ""
             },
             {
                 heading: "Q4 2018",
-                subheading: "Open beta testing",
-                description: `Fully functional application released to the public. Only a limited of shops available and not all cryptocurrencies supported for transactions.`,
+                subheading: "Open beta testing & Social marketplace",
+                description: `Fully functional application released to the public. Skitbay integrates the Steem SMT technology to turn interactions into profit and merges with the Busy.org ecosystem.`,
                 className: ""
             },
             {
                 heading: "Q1 2019",
-                subheading: "Development and expansion",
-                description: `Skitpay payment gateway now supports most cryptocurrencies and more than 300 shops available on the marketplace.`,
+                subheading: "OTC exchange",
+                description: `OTC exchange made available for shop owners to cash out to fiat money if they desire.`,
                 className: ""
             },
             {
-                heading: "Q3/Q4 2019",
-                subheading: "Mass adoption and Skitpay standalone",
-                description: `The Skitbay social marketplace is fully functional and accessible worldwide, Skitpay becomes a standalone app for crypto-payments.`,
+                heading: "Q2 2019",
+                subheading: "Skitpay commerce API",
+                description: `Skitpay standalone payment gateway launched, allowing merchants to accept payments in 50+ cryptocurrencies inside or outside Skitbay.`,
                 className: ""
             }
         ];
@@ -70,14 +70,14 @@ export default class RoadMap extends Component {
                     <div className="container">                                                                     
                         <div className="columns is-gapless is-desktop">
                             <div className="column">
-                                <SectionHeading color="white">roadmap</SectionHeading> 
-                                <DescriptionText color="white">
+                                <SectionHeading color="white">Roadmap</SectionHeading> 
+                                {/* <DescriptionText color="white">
                                     Stage one of planning and development is
                                     currently underway. Expected timeline for
                                     beta testing is in the last quarter of 2018.
                                     Subscribe to our newsletter for further
                                     updates.
-                                </DescriptionText>
+                                </DescriptionText> */}
                                 <RectangleGradient />
                             </div>
                             <div className="column" />

@@ -93,11 +93,9 @@ export default class Landing extends Component {
                     <div className="container">
                         <div className="columns is-gapless is-desktop">
                             <div className="column">
-                                <SectionHeading>team</SectionHeading>
+                                <SectionHeading>Team</SectionHeading>
                                 <DescriptionText>
-                                    With decades of experience our team is
-                                    comprised of people from around the world.
-                                    All focused on one goal, never settle.
+                                  With decades of experience our team is comprised of people from around the world. All focused on one goal, to build the next generation marketplace.
                                 </DescriptionText>
                                 <RectangleGradient />
                             </div>

@@ -13,7 +13,7 @@ export default class Landing extends Component {
             <div className="columns is-gapless">
                 <div className="column">
                   <TopSectionH2>
-                    Shop, Share, Earn.
+                    Shop within the new economy.  
                   </TopSectionH2>
                   <TopSectionH1>
                     <LogoText/>
