@@ -5,8 +5,14 @@ const SectionHeadingText = styled.h1.attrs({
 })`
     &&& {
         margin-bottom: 2.5rem;
-        font-size: 5rem;
-        color: ${props => props.color};       
+        font-size: 4rem;
+        color: ${props => props.color};
+    }
+
+    @media (min-width: 769px) {
+        &&& {
+            font-size: 5rem;
+        }
     }
 `;
 
