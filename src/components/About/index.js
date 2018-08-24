@@ -5,6 +5,7 @@ import RectangleGradient from "../sharedComponents/RectangleGradient";
 import BodyImage from "../../images/skitbay_about.png";
 import SectionHeading from "../sharedComponents/SectionHeading";
 import DescriptionText from "../sharedComponents/DescriptionText";
+import BuySellClean from "../../images/buysell_clean.png";
 
 export default class About extends Component {
     render() {
@@ -44,6 +45,7 @@ export default class About extends Component {
                                                 payment gateway all in one
                                                 platform.
                                             </p>
+                                            <BuySellImage />
                                             <p>
                                                 Skitbay integrates a social
                                                 reward technology which
@@ -69,6 +71,19 @@ export default class About extends Component {
                                                 platform worldwide.
                                             </p>
                                         </DescriptionSubText>
+
+                                        <WhitePaperSection>
+                                            <DescriptionText>
+                                                Want to know more about Skitbay?
+                                            </DescriptionText>
+                                            <DescriptionSubText>
+                                                Our whitepaper has all the
+                                                information you need to know.
+                                            </DescriptionSubText>
+                                            <WhitePaperButton link="https://s3.amazonaws.com/skitbay-app/Skitbay_whitepaper_beta_1.0.pdf">
+                                                WHITEPAPER
+                                            </WhitePaperButton>
+                                        </WhitePaperSection>
                                     </div>
                                 </div>
                             </div>
@@ -92,7 +107,7 @@ const ContainerSection = styled.section.attrs({
 
 const Background = styled.div.attrs({})`
     width: 100%;
-    height: 700px
+    height: 700px;
     opacity: 0.29;
     margin-top: 11.1rem;
     position: absolute;
@@ -111,21 +126,54 @@ const Foreground = styled.div.attrs({})`
         background-repeat: no-repeat;
         background-position: -25% 0;
         background-size: 58%;
-        z-index: 1;
+        z-index: 0;
     }
 `;
 
 const DescriptionSubText = styled.div`
-     {
-        font-size: 18px;
-        font-weight: 300;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 40px;
-        color: #544c63;
-    }
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.5rem;
+    color: #544c63;
 
     p {
-        margin-top: 20px;
+        margin-top: 1rem;
+    }
+`;
+
+const WhitePaperSection = styled.div`
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+`;
+
+const WhitePaperButton = styled.a.attrs({
+    className: "button is-rounded is-info",
+    target: props => (props.link ? "_blank" : undefined),
+    href: props => (props.link ? props.link : undefined)
+})`
+    margin-top: 1rem;
+    background-image: linear-gradient(322deg, #29e0ba, #2387ac 5%, #133c6d);
+    font-size: 0.9rem;
+    font-weight: bold;
+    &&& {
+        padding: 1.5rem 2rem;
+        letter-spacing: 0.08rem;
+    }
+`;
+
+const BuySellImage = styled.div.attrs({})`
+    height: 8rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(${BuySellClean});
+    background-size: contain;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    @media (min-width: 769px) {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
     }
 `;
