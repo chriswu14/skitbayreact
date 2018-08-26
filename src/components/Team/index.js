@@ -16,7 +16,6 @@ import VictorDoanImg from "../../images/team/VictorDoan.jpg";
 import TonyXuImg from "../../images/team/TonyXu.jpg";
 import ChristopherKhimImg from "../../images/team/ChristopherKhim.jpg";
 import CaseyCarterImg from "../../images/team/CaseyCarter.jpg";
-import SosoZouImg from "../../images/team/SosoZou.jpg";
 
 export default class Landing extends Component {
     constructor() {
@@ -29,7 +28,7 @@ export default class Landing extends Component {
                     teamPosition: "Advisor"
                 },
                 {
-                    imgUrl: TianHaoLiuImg, 
+                    imgUrl: TianHaoLiuImg,
                     fullName: "Tian Hao Liu",
                     teamPosition: "Advisor"
                 },
@@ -69,20 +68,15 @@ export default class Landing extends Component {
                     teamPosition: "Marketplace Analyst"
                 },
                 {
-                  imgUrl: SosoZouImg,
-                  fullName: "Soso Zou",
-                  teamPosition: "Marketplace Analyst"
+                    imgUrl: CaseyCarterImg,
+                    fullName: "Casey Carter",
+                    teamPosition: "Developer and Technical Writer"
                 },
                 {
-                  imgUrl: CaseyCarterImg,
-                  fullName: "Casey Carter",
-                  teamPosition: "Developer and Technical Writer"
-                },
-                {
-                  imgUrl: ChristopherKhimImg,
-                  fullName: "Christopher Khim",
-                  teamPosition: "Content Editor"
-                }              
+                    imgUrl: ChristopherKhimImg,
+                    fullName: "Christopher Khim",
+                    teamPosition: "Content Editor"
+                }
             ]
         };
     }
@@ -95,7 +89,10 @@ export default class Landing extends Component {
                             <div className="column">
                                 <SectionHeading>Team</SectionHeading>
                                 <DescriptionText>
-                                  With decades of experience our team is comprised of people from around the world. All focused on one goal, to build the next generation marketplace.
+                                    With decades of experience our team is
+                                    comprised of people from around the world.
+                                    All focused on one goal, to build the next
+                                    generation marketplace.
                                 </DescriptionText>
                                 <RectangleGradient />
                             </div>
